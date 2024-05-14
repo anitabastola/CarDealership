@@ -15,7 +15,7 @@ public class Vehicle {
         this.year = year;
         this.make = make;
         this.model = model;
-        this.vehicleType =vehicleType;
+        this.vehicleType = vehicleType;
         this.color = color;
         this.odometer = odometer;
         this.price = price;
@@ -83,6 +83,20 @@ public class Vehicle {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "vin=" + vin +
+                ", year=" + year +
+                ", make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", vehicleType='" + vehicleType + '\'' +
+                ", color='" + color + '\'' +
+                ", odometer=" + odometer +
+                ", price=" + price +
+                '}';
     }
 }
 
