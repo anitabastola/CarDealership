@@ -11,6 +11,7 @@ public class UserInterface {
     }
     public void display() {
 
+
     }
 
     public void processGetByPriceRequest() {
@@ -41,6 +42,7 @@ public class UserInterface {
 
     }
     public void processRemoveVehicleRequest() {
+
 
     }
 

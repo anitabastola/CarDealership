@@ -9,7 +9,7 @@ public class Dealership {
 
     private ArrayList<Vehicle> inventory = new ArrayList<>();
 
-    public Dealership(String name, String address, String phone) {
+    public Dealership() {
         this.name = name;
         this.address = address;
         this.phone = phone;
@@ -43,7 +43,9 @@ public class Dealership {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
+    public ArrayList<Vehicle> getAllVehicles() {
+        return inventory;
+    }
 
     public void addVehicle() {
     return;
