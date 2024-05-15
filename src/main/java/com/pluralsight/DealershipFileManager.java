@@ -1,9 +1,6 @@
 package com.pluralsight;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +24,7 @@ public class DealershipFileManager {
                     String name = parts[0];
                     String address = parts[1];
                     String phone = parts[2];
-                    // dealership = new Dealership(name, address, phone);
+                    dealership = new Dealership(name, address, phone);
 
 
                 }
@@ -54,13 +51,40 @@ public class DealershipFileManager {
         } catch (FileNotFoundException e) {
             System.out.println("Error loading inventory: " + e.getMessage());
         } catch (IOException e) {
+
             return null;
         }
         return dealership;
     }
 
     public void saveDealership(Dealership dealership) {
+        BufferedWriter bufferedWriter = null;
+    }
+        try {
+
+            FileWriter fileWriter = new FileWriter(FILE_NAME);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        try {
+            bufferedWriter.write(dealership.getName() +"|" + getAddress() + "|" + getPhone());
+            bufferedWriter.newLine();
+
+            List<Vehicle> inventory = getDealership().getInventory(); //check
+            for(Vehicle vehicle : inventory) {
+                bufferedWriter.write(vehicle.toString());
+                bufferedWriter.newLine();
+            }
+
+
+        } catch (IOException e) {
+
+            System.out.println("Error with save dealership: " + e.getMessage());
+
+
+        }
+
+        return null;
 
     }
+
 
     }
