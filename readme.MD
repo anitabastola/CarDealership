@@ -1,6 +1,7 @@
 # Car Dealership Object Oreinted Programming
 ## Description of the Project
-Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
+Briefly describe what this Java consol
+e application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
 ![Class Diagram](path/to/your/class_diagram.png)
 ## User Stories
 List the user stories that guided the development of your application. Format these stories as: "As a [type of ], I want [some goal] so that [some reason]."
@@ -27,15 +28,22 @@ Follow these steps to get your application running within IntelliJ IDEA:
 4. Find the main class with the `public static void main(String[] args)` method.
 5. Right-click on the file and select 'Run 'YourMainClassName.main()'' to start the application.
 ## Technologies Used
-- Java: Mention the version you are using.
-- Any additional libraries or frameworks used in the project.
+- JDK 17 Coretto Mavern
 ## Demo
 Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
-![Application Screenshot](path/to/your/screenshot.png)
-## Future Work
+![Screenshot 2024-05-16 101747.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20101747.png)
+![Screenshot 2024-05-16 102951.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20102951.png)
+![Screenshot 2024-05-16 103023.png](..%2F..%2F..%2FPictures%2FScreenshots%2![Screenshot 2024-05-16 103119.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103119.png)FScreenshot%202024-05-16%20103023.png)
+![Screenshot 2024-05-16 103119.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103119.png)
+![Screenshot 2024-05-16 103303.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103303.png)
+![Screenshot 2024-05-16 103337.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103337.png)
+![Screenshot 2024-05-16 103413.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103413.png)
+![Screenshot 2024-05-16 103518.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103518.png)
+![Screenshot 2024-05-16 103600.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103600.png)
+![Screenshot 2024-05-16 103634.png](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-16%20103634.png)
 Outline potential future enhancements or functionalities you might consider adding:
-- Additional feature to be developed.
-- Improvement of current functionalities.
+- I would like to see a service that takes care of home delivery vehicles with the comfort of our place. 
+- I would like to see 
 ## Resources
 List resources such as tutorials, articles, or documentation that helped you during the project.
 - [Java Programming Tutorial](https://www.example.com)

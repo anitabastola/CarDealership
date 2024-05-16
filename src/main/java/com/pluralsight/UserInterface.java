@@ -59,7 +59,7 @@ public class UserInterface {
                     processGetbyMileageRequest();
                     break;
                 case "6":
-                    processGetbyVehicleRequest();
+                  //  processGetbyVehicleRequest();
                     break;
                 case "7":
                     processGetAllVehicleRequest();
@@ -76,11 +76,9 @@ public class UserInterface {
 
             }
 
-
                 }
 
             }
-
 
 
         public void processGetByPriceRequest() {
