@@ -6,16 +6,17 @@ import java.util.List;
 
 public class DealershipFileManager {
 
-    private static final String FILE_NAME = "inventory.csv";
+    private static final String FILE_NAME = "dealership.csv";
 
     public Dealership getDealership() {
         Dealership dealership = null;
         ArrayList<Vehicle> inventory = new ArrayList<>();
         try {
 
-            FileReader fileReader = new FileReader(FILE_NAME);
+            FileReader fileReader = new FileReader("dealership.csv");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line;
+            bufferedReader.close();
 
             if ((line = bufferedReader.readLine()) != null) {
                 String[] parts = line.split("\\|");
@@ -58,33 +59,33 @@ public class DealershipFileManager {
     }
 
     public void saveDealership(Dealership dealership) {
-        BufferedWriter bufferedWriter = null;
-    }
         try {
-
-            FileWriter fileWriter = new FileWriter(FILE_NAME);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-        try {
-            bufferedWriter.write(dealership.getName() +"|" + getAddress() + "|" + getPhone());
-            bufferedWriter.newLine();
-
-            List<Vehicle> inventory = getDealership().getInventory(); //check
-            for(Vehicle vehicle : inventory) {
-                bufferedWriter.write(vehicle.toString());
+            FileReader fileWriter = new FileReader("dealership.csv");
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("dealership.csv"));
+            try {
+                bufferedWriter.write(dealership.getName() + "|" + dealership.getAddress() + "|" + dealership.getPhone());
                 bufferedWriter.newLine();
+
+                List<Vehicle> inventory = getDealership().getInventory(); //check
+                for (Vehicle vehicle : inventory) {
+                    bufferedWriter.write(vehicle.toString());
+                    bufferedWriter.newLine();
+                    bufferedWriter.close();
+
+                }
+
+
+            } catch (Exception e) {
+
+                System.out.println("Error with save dealership: " + e.getMessage());
+
+                bufferedWriter.close();
+
             }
 
-
         } catch (IOException e) {
-
-            System.out.println("Error with save dealership: " + e.getMessage());
-
+            System.out.println("Error dealership info: " + e.getMessage());
 
         }
-
-        return null;
-
     }
-
-
-    }
+}
