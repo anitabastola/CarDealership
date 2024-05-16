@@ -1,4 +1,4 @@
-# Project Title
+# Car Dealership Object Oreinted Programming
 ## Description of the Project
 Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
 ![Class Diagram](path/to/your/class_diagram.png)
