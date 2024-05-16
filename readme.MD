@@ -30,8 +30,7 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - Java: Mention the version you are using.
 - Any additional libraries or frameworks used in the project.
 ## Demo
-Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
-![Application Screenshot](path/to/your/screenshot.png)
+
 ## Future Work
 Outline potential future enhancements or functionalities you might consider adding:
 - Additional feature to be developed.
