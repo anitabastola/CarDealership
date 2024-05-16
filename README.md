@@ -3,8 +3,16 @@
 Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
 ![Class Diagram](path/to/your/class_diagram.png)
 ## User Stories
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
-- As a user, I want to be able to input my data, so that the application can process it accordingly.
+List the user stories that guided the development of your application. Format these stories as: "As a [type of ], I want [some goal] so that [some reason]."
+- As a sales manager user, I want to be able to find vehicles by make/model.
+- As a sales manager user, I want to be able to search for vehicles with a specific year of the vehicles.
+  - As a sales manager user, I want to be able to search for specific colored vehicle.
+- As a sales manager user, I want to look for vehicles with a specific vehicle mileage. 
+- As a sales manager user, I want to find vehicle by the type such as SUV, car, truck or a van so that I am able to meet the customer's expectation. 
+- As a sales manager user, I want to be able to list all the vehicles that we have in our dealership. 
+- As a sales manager user, I want to be able to add any vehicle  to our list to keep up with the market. 
+- As a sales manager user, I want to be able to remove a vehicle from the list when there is none in the inventory.
+As a sales manager user, I want to be able to quit the application  when I am done using it.
 - As a user, I want to receive immediate feedback, so I can understand what to do next.
 ## Setup
 Instructions on how to set up and run the project using IntelliJ IDEA.
